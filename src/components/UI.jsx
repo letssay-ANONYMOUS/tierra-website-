@@ -40,8 +40,10 @@ export const Button = React.memo(({ children, variant = 'primary', className = '
 });
 
 export const Section = React.memo(({ children, className = '', id = '' }) => (
-  <section id={id} className={`py-16 md:py-36 px-6 md:px-12 max-w-[1400px] mx-auto arch-grid ${className}`}>
-    {children}
+  <section id={id} className={`w-full overflow-hidden ${className}`}>
+    <div className="max-w-[1600px] w-[94%] mx-auto py-16 md:py-36 px-4 md:px-8 arch-grid">
+      {children}
+    </div>
   </section>
 ));
 

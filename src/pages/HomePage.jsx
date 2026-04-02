@@ -54,7 +54,7 @@ export const HomePage = React.memo(({ navigate, menuItems }) => (
 
     {/* Elements Carousel */}
     <div className="py-16 md:py-32 border-b border-[#1C1C1C]/5 overflow-hidden bg-[#F2F0E9]">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 mb-8 md:mb-16 flex flex-col md:flex-row justify-between items-start md:items-end border-b border-[#1C1C1C]/10 pb-8 arch-grid">
+      <div className="max-w-[1600px] w-[94%] mx-auto px-4 md:px-8 mb-8 md:mb-16 flex flex-col md:flex-row justify-between items-start md:items-end border-b border-[#1C1C1C]/10 pb-8 arch-grid">
         <div>
           <Heading level={4}>The Elements</Heading>
           <Heading level={2} className="!mb-0">Crafted by Nature</Heading>
@@ -67,28 +67,30 @@ export const HomePage = React.memo(({ navigate, menuItems }) => (
           </div>
         </div>
       </div>
-      <div className="flex gap-6 md:gap-12 overflow-x-auto px-6 md:px-12 pb-12 no-scrollbar snap-x snap-mandatory cursor-grab" style={{ scrollBehavior: 'smooth' }}>
-        {[
-          { title: "Ancient Olive", img: "https://images.unsplash.com/photo-1471180625745-944903837c22?auto=format&fit=crop&q=80&w=600", desc: "Sourced from 100-year old groves." },
-          { title: "Heritage Wood", img: "/wood-texture.png", desc: "Reclaimed timber interiors." },
-          { title: "Single Origin", img: "https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?auto=format&fit=crop&q=80&w=600", desc: "Roasted in small batches." }
-        ].map((item, i) => (
-          <div key={i} className="flex-shrink-0 w-72 md:w-96 snap-center group hover-trigger">
-            <div className="aspect-[4/5] rounded-t-full overflow-hidden mb-8 relative border border-[#1C1C1C]/5 shadow-sm">
-              <div className="absolute inset-0 bg-[#1C1C1C]/10 group-hover:bg-transparent transition-colors z-10" />
-              <img src={item.img} loading="lazy" decoding="async" className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105" alt={item.title} />
+      <div className="max-w-[1600px] w-[94%] mx-auto">
+        <div className="flex gap-6 md:gap-12 overflow-x-auto px-4 md:px-8 pb-12 no-scrollbar snap-x snap-mandatory cursor-grab" style={{ scrollBehavior: 'smooth' }}>
+          {[
+            { title: "Ancient Olive", img: "https://images.unsplash.com/photo-1471180625745-944903837c22?auto=format&fit=crop&q=80&w=600", desc: "Sourced from 100-year old groves." },
+            { title: "Heritage Wood", img: "/wood-texture.png", desc: "Reclaimed timber interiors." },
+            { title: "Single Origin", img: "https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?auto=format&fit=crop&q=80&w=600", desc: "Roasted in small batches." }
+          ].map((item, i) => (
+            <div key={i} className="flex-shrink-0 w-72 md:w-96 snap-center group hover-trigger">
+              <div className="aspect-[4/5] rounded-t-full overflow-hidden mb-8 relative border border-[#1C1C1C]/5 shadow-sm">
+                <div className="absolute inset-0 bg-[#1C1C1C]/10 group-hover:bg-transparent transition-colors z-10" />
+                <img src={item.img} loading="lazy" decoding="async" className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105" alt={item.title} />
+              </div>
+              <h3 className="font-serif text-3xl text-center text-[#1C1C1C]">{item.title}</h3>
+              <p className="text-center text-[10px] uppercase tracking-widest text-[#666] mt-3">{item.desc}</p>
             </div>
-            <h3 className="font-serif text-3xl text-center text-[#1C1C1C]">{item.title}</h3>
-            <p className="text-center text-[10px] uppercase tracking-widest text-[#666] mt-3">{item.desc}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
 
     {/* Ritual Section */}
     <section className="py-24 md:py-40 bg-[#1C1C1C] text-[#F2F0E9] relative overflow-hidden border-y border-[#1C1C1C]">
       <div className="absolute top-1/2 -translate-y-1/2 right-0 font-serif text-[25vw] leading-none opacity-[0.02] pointer-events-none select-none">BREATHE</div>
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center arch-grid border-x-white/5">
+      <div className="max-w-[1600px] w-[94%] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center arch-grid border-x-white/5">
         <div className="lg:col-span-5 relative z-10">
           <Leaf className="w-10 h-10 mb-8 text-[#3A4D39]" />
           <Heading level={2} className="!text-[#F2F0E9] !text-4xl md:!text-6xl">Not just coffee. <br/> A daily ritual.</Heading>
