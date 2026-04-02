@@ -4,7 +4,7 @@ export const SEED_MENU = [
     price: 48.00,
     name: "Truffle Omelette Toast",
     description: "Sourdough toast topped with mixed cheese, omelette cooked with truffle mushroom. Garnished with parmesan, pomegranate seeds, and micro greens.",
-    image: "https://images.unsplash.com/photo-1525351484163-7529414395d8?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&q=80&w=800",
     category: "Breakfast",
     tags: ["Truffle", "Vegetarian"]
   },

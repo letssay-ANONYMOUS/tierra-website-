@@ -34,7 +34,7 @@ const SwipeableCartItem = React.memo(({ item, updateQuantity, removeFromCart }) 
         <X className="w-5 h-5 mb-1" /><span className="text-[9px] font-bold tracking-widest uppercase">Delete</span>
       </div>
       <div ref={itemRef} className="relative bg-[#F2F0E9] flex gap-4 md:gap-6 z-10 w-full transform-gpu" style={{ transform: 'translate3d(0px, 0, 0)' }} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
-        <img src={item.image} alt={item.name} className="w-20 h-20 md:w-24 md:h-24 object-cover grayscale-[0.2] rounded-lg pointer-events-none" />
+        <img src={item.image} alt={item.name} className="w-20 h-20 md:w-24 md:h-24 object-cover rounded-lg pointer-events-none" />
         <div className="flex-1 flex flex-col justify-center py-1">
           <div>
             <div className="flex justify-between items-start mb-1 pr-4">
@@ -86,9 +86,9 @@ export const Navbar = React.memo(({ navigate }) => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu ${isScrolled ? 'pt-4 px-4 md:pt-6' : 'pt-0 px-0'}`} style={{ willChange: 'transform, padding' }}>
-      <div className={`mx-auto flex items-center justify-between relative z-[60] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu ${isScrolled ? 'max-w-[1000px] h-16 frosted-pill px-8' : 'max-w-[1400px] w-full h-20 md:h-24 px-6 md:px-12 bg-transparent border-transparent'}`}>
-        <div onClick={() => navigate('home')} className="cursor-pointer flex items-center gap-3 flex-shrink-0 group hover-trigger">
+    <nav className={`fixed top-0 left-0 right-0 flex justify-center z-[60] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu ${isScrolled ? 'pt-4 px-4 md:pt-6' : 'pt-4 md:pt-6 px-4 md:px-6'}`} style={{ willChange: 'transform, padding' }}>
+      <div className={`w-full flex items-center justify-between relative z-[60] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu ${isScrolled ? 'max-w-[1000px] h-16 frosted-pill px-8' : 'max-w-[1400px] h-20 md:h-24 px-6 md:px-12 bg-transparent border-transparent'}`}>
+        <div onClick={() => navigate('home')} className="cursor-pointer flex items-center gap-3 flex-shrink-0 group hover-trigger ml-1 md:ml-6 lg:ml-8">
           <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-500 ${isScrolled ? 'bg-[#3A4D39] group-hover:bg-[#1C1C1C]' : 'bg-white group-hover:scale-110'}`}>
             <Leaf className={`w-4 h-4 transition-colors ${isScrolled ? 'text-white' : 'text-[#3A4D39]'}`} />
           </div>
@@ -103,7 +103,7 @@ export const Navbar = React.memo(({ navigate }) => {
             </button>
           ))}
         </div>
-        <div className="flex items-center gap-2 md:gap-4 flex-shrink-0">
+        <div className="flex items-center gap-2 md:gap-4 flex-shrink-0 mr-1 md:mr-6 lg:mr-8">
           <button onClick={() => setIsCartOpen(true)} className={`relative p-2 rounded-full transition-all duration-300 hover-trigger ${isScrolled ? 'hover:bg-black/10 text-[#1C1C1C]' : 'hover:bg-white/20 text-white mix-blend-difference'}`}>
             <ShoppingBag className="w-5 h-5 transition-transform hover:scale-110" />
             {cart.length > 0 && <span className="absolute top-0 right-0 w-2 h-2 bg-[#C5A065] rounded-full animate-pulse shadow-[0_0_8px_rgba(197,160,101,0.8)]" />}

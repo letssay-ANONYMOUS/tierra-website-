@@ -34,7 +34,7 @@ const App = () => {
     <CartProvider>
       {!isLoaded && <Preloader onComplete={() => setIsLoaded(true)} />}
       <div className={`bg-grain transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}></div>
-      <div className={`font-sans text-[#1C1C1C] min-h-screen selection:bg-[#3A4D39] selection:text-[#F2F0E9] transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`font-sans text-[#1C1C1C] min-h-screen overflow-x-hidden selection:bg-[#3A4D39] selection:text-[#F2F0E9] transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <Navbar navigate={setCurrentPage} />
         <ItemModal />
         <CartDrawer navigate={setCurrentPage} />

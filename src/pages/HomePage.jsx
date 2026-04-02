@@ -29,7 +29,7 @@ export const HomePage = React.memo(({ navigate, menuItems }) => (
         <div className="w-full lg:w-5/12 relative group">
           <div className="aspect-[3/4] p-3 md:p-5 border border-[#1C1C1C]/10 bg-white shadow-sm relative z-10 transition-transform duration-700 group-hover:-translate-y-2 group-hover:shadow-2xl">
             <div className="w-full h-full relative overflow-hidden shadow-[inset_0_0_30px_rgba(0,0,0,0.1)]">
-              <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&q=80&w=800" loading="lazy" decoding="async" className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-1000 -z-10" alt="Reserve Pour"/>
+              <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&q=80&w=800" loading="lazy" decoding="async" className="w-full h-full object-cover transition-all duration-1000 -z-10" alt="Reserve Pour"/>
             </div>
           </div>
           <span className="hidden md:block absolute -left-8 top-1/2 -translate-y-1/2 rotate-180 text-[10px] tracking-[0.4em] text-[#1C1C1C]/40 uppercase vertical-text whitespace-nowrap z-0">Exhibit 01 — The Tierra Reserve</span>
@@ -70,7 +70,7 @@ export const HomePage = React.memo(({ navigate, menuItems }) => (
       <div className="flex gap-6 md:gap-12 overflow-x-auto px-6 md:px-12 pb-12 no-scrollbar snap-x snap-mandatory cursor-grab" style={{ scrollBehavior: 'smooth' }}>
         {[
           { title: "Ancient Olive", img: "https://images.unsplash.com/photo-1471180625745-944903837c22?auto=format&fit=crop&q=80&w=600", desc: "Sourced from 100-year old groves." },
-          { title: "Heritage Wood", img: "https://images.unsplash.com/photo-1583847268964-b185b1ce8058?auto=format&fit=crop&q=80&w=600", desc: "Reclaimed timber interiors." },
+          { title: "Heritage Wood", img: "/wood-texture.png", desc: "Reclaimed timber interiors." },
           { title: "Single Origin", img: "https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?auto=format&fit=crop&q=80&w=600", desc: "Roasted in small batches." }
         ].map((item, i) => (
           <div key={i} className="flex-shrink-0 w-72 md:w-96 snap-center group hover-trigger">
@@ -100,10 +100,10 @@ export const HomePage = React.memo(({ navigate, menuItems }) => (
         </div>
         <div className="lg:col-span-6 lg:col-start-7 relative mt-12 lg:mt-0 hover-trigger">
           <div className="aspect-[3/4] overflow-hidden rounded-sm relative z-10 p-2 md:p-3 border border-[#F2F0E9]/20 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
-            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1000" loading="lazy" decoding="async" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 grayscale hover:grayscale-0" alt="Pour over" />
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1000" loading="lazy" decoding="async" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" alt="Pour over" />
           </div>
           <div className="absolute -bottom-8 -left-8 md:-bottom-16 md:-left-16 w-40 h-40 md:w-64 md:h-64 overflow-hidden rounded-full border border-[#F2F0E9]/30 p-2 bg-[#1C1C1C] z-20 animate-float shadow-2xl hidden md:block pointer-events-none">
-            <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&q=80&w=600" loading="lazy" decoding="async" className="w-full h-full object-cover rounded-full grayscale-[0.5]" alt="Detail" />
+            <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&q=80&w=600" loading="lazy" decoding="async" className="w-full h-full object-cover rounded-full" alt="Detail" />
           </div>
         </div>
       </div>

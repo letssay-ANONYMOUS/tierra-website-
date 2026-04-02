@@ -34,7 +34,7 @@ export const MenuPage = React.memo(({ navigate }) => {
     },
     {
       id: 'morning', title: 'Morning Rituals',
-      image: 'https://images.unsplash.com/photo-1525351484163-7529414395d8?auto=format&fit=crop&q=80&w=1000',
+      image: 'https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&q=80&w=1000',
       description: 'Nourishing starts to your day, crafted with care.',
       items: [
         { id: 'm12', name: 'Truffle Omelette Toast', price: 18.00, desc: 'Sourdough toast topped with mixed cheese, omelette cooked with truffle mushroom.' },
@@ -78,8 +78,11 @@ export const MenuPage = React.memo(({ navigate }) => {
               </div>
             </div>
             <div className="w-full md:w-7/12 lg:w-1/2 flex flex-col gap-8 md:gap-12 z-20 bg-[#F2F0E9] md:bg-transparent pt-4 md:pt-0 relative">
-              {section.items.map((item) => (
-                <div key={item.id} className="border-b border-[#1C1C1C]/10 pb-8 group cursor-pointer relative hover-trigger" onClick={() => setActiveItem({...item, image: section.image})}>
+              {section.items.map((item, itemIndex) => (
+                <div key={item.id}
+                  className="border-b border-[#1C1C1C]/10 pb-8 group cursor-pointer relative hover-trigger opacity-0"
+                  style={{ animation: `fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards`, animationDelay: `${itemIndex * 0.12}s` }}
+                  onClick={() => setActiveItem({...item, image: section.image})}>
                   <div className="absolute -inset-6 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl -z-10 hidden md:block shadow-[0_4px_20px_rgba(0,0,0,0.03)]" />
                   <div className="flex justify-between items-end mb-3 relative z-10">
                     <h3 className="font-serif text-2xl md:text-3xl text-[#1C1C1C] group-hover:text-[#3A4D39] transition-colors pr-4">{item.name}</h3>

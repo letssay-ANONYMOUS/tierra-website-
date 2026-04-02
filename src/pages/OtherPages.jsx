@@ -14,7 +14,7 @@ export const LocationsPage = React.memo(() => (
         {APP_DATA.locations.map(loc => (
           <div key={loc.id} className="group cursor-pointer hover-trigger">
             <div className="h-[400px] md:h-[600px] overflow-hidden mb-8 relative border border-[#1C1C1C]/10 p-2 bg-white">
-              <img src={loc.image} loading="lazy" decoding="async" className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" alt={loc.name} />
+              <img src={loc.image} loading="lazy" decoding="async" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" alt={loc.name} />
             </div>
             <h3 className="font-serif text-4xl mb-2 text-[#1C1C1C]">{loc.name}</h3>
             <p className="font-sans text-sm text-[#666] mb-6 tracking-widest uppercase">{loc.address}</p>
@@ -27,7 +27,7 @@ export const LocationsPage = React.memo(() => (
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6617949390234!2d-99.16527582494924!3d19.427024440860882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sRoma%20Norte.%2C%20Mexico%20City%2C%20CDMX%2C%20Mexico!5e0!3m2!1sen!2sus!4v1709849202111!5m2!1sen!2sus"
             width="100%" height="100%"
-            style={{ border: 0, filter: 'grayscale(100%) contrast(1.1) opacity(0.8)' }}
+            style={{ border: 0, filter: 'contrast(1.1) opacity(0.8)' }}
             allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
           <div className="absolute inset-0 bg-[#1C1C1C]/5 pointer-events-none transition-colors duration-500 group-hover:bg-transparent"></div>
@@ -41,7 +41,7 @@ export const CateringPage = React.memo(({ navigate }) => (
   <div className="fade-up-enter bg-[#F2F0E9]">
     <div className="relative h-[60vh] md:h-[80vh] min-h-[500px] md:min-h-[700px] overflow-hidden">
       <div className="absolute inset-0 bg-black/40 z-10" />
-      <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&q=80&w=2000" alt="Catering Table Spread" className="absolute inset-0 w-full h-full object-cover animate-slow-zoom" />
+      <img src="/catering-hero.png" alt="Catering Experience" className="absolute inset-0 w-full h-full object-cover animate-slow-zoom" />
       <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-6">
         <span className="font-sans text-[10px] md:text-xs text-[#F2F0E9] uppercase tracking-[0.4em] mb-6 animate-pulse">Private Dining & Events</span>
         <h1 className="font-serif text-6xl md:text-8xl lg:text-[10rem] text-[#F2F0E9] mb-8 leading-[0.8] tracking-tighter">Elevate Every <br/> Occasion</h1>
@@ -97,7 +97,7 @@ export const AboutPage = React.memo(({ navigate }) => (
         <div className="lg:col-span-7 relative">
           <div className="aspect-[4/5] relative z-10 p-4 border border-[#1C1C1C]/10 bg-white shadow-xl">
             <div className="w-full h-full relative overflow-hidden shadow-[inset_0_0_30px_rgba(0,0,0,0.1)]">
-              <img src="https://images.unsplash.com/photo-1507133750069-bef72f3707a9?auto=format&fit=crop&q=80&w=1200" loading="lazy" decoding="async" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 -z-10" alt="Barista" />
+              <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=1200" loading="lazy" decoding="async" className="w-full h-full object-cover transition-all duration-1000 -z-10" alt="Coffee Craft" />
             </div>
           </div>
           <div className="absolute -bottom-8 left-4 md:bottom-12 md:-left-12 bg-white p-6 border border-[#1C1C1C]/10 shadow-2xl z-20 max-w-[200px]">
