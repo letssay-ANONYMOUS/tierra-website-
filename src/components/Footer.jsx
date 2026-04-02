@@ -12,7 +12,7 @@ export const Footer = React.memo(({ navigate }) => (
         ))}
       </div>
     </div>
-    <div className="max-w-[1600px] w-[94%] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-[#F2F0E9]/10 pb-16 md:pb-24 relative z-10">
+    <div className="max-w-[2000px] w-[96%] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-[#F2F0E9]/10 pb-16 md:pb-24 relative z-10">
       <div className="md:col-span-5 space-y-8 pr-8">
         <h4 className="font-sans text-[10px] uppercase tracking-[0.3em] text-[#C5A065]">The Philosophy</h4>
         <p className="text-[#F2F0E9]/60 font-light leading-relaxed text-lg">
@@ -41,7 +41,7 @@ export const Footer = React.memo(({ navigate }) => (
     <div className="w-full overflow-hidden mt-12 mb-4 flex justify-center opacity-10 select-none pointer-events-none">
       <span className="font-serif text-[18vw] leading-none whitespace-nowrap tracking-tighter">TIERRA</span>
     </div>
-    <div className="max-w-[1600px] w-[94%] mx-auto px-4 md:px-8 mt-12 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase tracking-[0.2em] text-[#F2F0E9]/40 relative z-10">
+    <div className="max-w-[2000px] w-[96%] mx-auto px-4 md:px-8 mt-12 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase tracking-[0.2em] text-[#F2F0E9]/40 relative z-10">
       <p>&copy; {new Date().getFullYear()} Tierra Hospitality.</p>
       <div className="flex gap-8 mt-4 md:mt-0">
         <span className="hover:text-white transition-colors cursor-pointer hover-trigger">Privacy</span>

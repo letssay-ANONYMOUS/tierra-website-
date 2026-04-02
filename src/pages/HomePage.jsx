@@ -53,8 +53,8 @@ export const HomePage = React.memo(({ navigate, menuItems }) => (
     </Section>
 
     {/* Elements Carousel */}
-    <div className="py-16 md:py-32 border-b border-[#1C1C1C]/5 overflow-hidden bg-[#F2F0E9]">
-      <div className="max-w-[1600px] w-[94%] mx-auto px-4 md:px-8 mb-8 md:mb-16 flex flex-col md:flex-row justify-between items-start md:items-end border-b border-[#1C1C1C]/10 pb-8 arch-grid">
+    <div className="w-screen relative left-1/2 -ml-[50vw] py-16 md:py-32 border-b border-[#1C1C1C]/5 overflow-hidden bg-[#F2F0E9]">
+      <div className="max-w-[2000px] w-[96%] mx-auto px-4 md:px-8 mb-8 md:mb-16 flex flex-col md:flex-row justify-between items-start md:items-end border-b border-[#1C1C1C]/10 pb-8 arch-grid">
         <div>
           <Heading level={4}>The Elements</Heading>
           <Heading level={2} className="!mb-0">Crafted by Nature</Heading>
@@ -88,9 +88,9 @@ export const HomePage = React.memo(({ navigate, menuItems }) => (
     </div>
 
     {/* Ritual Section */}
-    <section className="py-24 md:py-40 bg-[#1C1C1C] text-[#F2F0E9] relative overflow-hidden border-y border-[#1C1C1C]">
+    <section className="w-screen relative left-1/2 -ml-[50vw] py-24 md:py-40 bg-[#1C1C1C] text-[#F2F0E9] overflow-hidden border-y border-[#1C1C1C]">
       <div className="absolute top-1/2 -translate-y-1/2 right-0 font-serif text-[25vw] leading-none opacity-[0.02] pointer-events-none select-none">BREATHE</div>
-      <div className="max-w-[1600px] w-[94%] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center arch-grid border-x-white/5">
+      <div className="max-w-[2000px] w-[96%] mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center arch-grid border-x-white/5">
         <div className="lg:col-span-5 relative z-10">
           <Leaf className="w-10 h-10 mb-8 text-[#3A4D39]" />
           <Heading level={2} className="!text-[#F2F0E9] !text-4xl md:!text-6xl">Not just coffee. <br/> A daily ritual.</Heading>

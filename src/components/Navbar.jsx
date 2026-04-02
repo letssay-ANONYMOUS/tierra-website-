@@ -87,7 +87,7 @@ export const Navbar = React.memo(({ navigate }) => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 flex justify-center z-[60] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu ${isScrolled ? 'pt-4 px-4 md:pt-6' : 'pt-4 md:pt-6 px-4 md:px-6'}`} style={{ willChange: 'transform, padding' }}>
-      <div className={`w-full flex items-center justify-between relative z-[60] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu ${isScrolled ? 'max-w-[1200px] w-[92%] h-16 frosted-pill px-8' : 'max-w-[1600px] w-[94%] h-20 md:h-24 px-4 md:px-8 bg-transparent border-transparent'}`}>
+      <div className={`w-full flex items-center justify-between relative z-[60] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform-gpu ${isScrolled ? 'max-w-[1400px] w-[94%] h-16 frosted-pill px-8' : 'max-w-[2000px] w-[96%] h-20 md:h-24 px-4 md:px-8 bg-transparent border-transparent'}`}>
         <div onClick={() => navigate('home')} className="cursor-pointer flex items-center gap-3 flex-shrink-0 group hover-trigger ml-1 md:ml-6 lg:ml-8">
           <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-500 ${isScrolled ? 'bg-[#3A4D39] group-hover:bg-[#1C1C1C]' : 'bg-white group-hover:scale-110'}`}>
             <Leaf className={`w-4 h-4 transition-colors ${isScrolled ? 'text-white' : 'text-[#3A4D39]'}`} />
